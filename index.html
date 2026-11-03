@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- o head contém informações e configurações da página, como o título, a codificação dos caracteres e as ligações aos ficheiros CSS e bootstrap -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marlene Silva | Portfólio pessoal</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Imagens/Favicon.png">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Dentro do body coloquei todo o conteúdo visível do portfólio -->
+
+    <!-- Cabeçalho fixo (Bootstrap)-->
+    <header class="fixed-top">
+
+        <!-- o header identifica o cabeçalho da página -->
+
+        <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+
+            <!-- Utilizei um container para centrar e alinhar o conteúdo do cabeçalho com as restantes secções -->
+
+            <div class="container">
+
+                <!-- Logotipo -->
+                <a class="navbar-brand" href="#inicio">
+                    <img src="Imagens/MeuLogo.png" alt="Marlene Silva — início" class="logo">
+                </a>
+
+                <!-- Menu (Bootstrap) -->
+                <!-- Botão do menu mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Abrir ou fechar menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- O botão controla a abertura do menu em ecrãs pequenos. Utilizei os atributos do Bootstrap e atributos de acessibilidade para identificar a sua função e o seu estado -->
+
+                <!-- Links do menu -->
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <!-- Associei o botão à área dos links através do identificador menu -->
+
+                    <ul class="navbar-nav text-uppercase ms-auto fw-bold">
+
+                        <!-- ms-auto em desktop, ajuda a empurrar o grupo de links para a direita -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">
+                                Sobre mim
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">
+                                Projetos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#competencias">
+                                Programas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">
+                                Contactos
+                            </a>
+                        </li>
+                        <!-- Organizei os links numa lista e cada ligação aponta para uma secção da própria página através do seu respetivo id -->
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteudo principal -->
+    <main>
+
+        <!-- Utilizei a tag main para identificar o conteúdo principal do portfólio -->
+
+        <!-- Apresentação -->
+
+        <section id="inicio" class="text-center py-5">
+
+            <!-- Em py-5, o p significa padding, o y corresponde à direção vertical e o 5 é um nível da escala de espaçamento do Bootstrap -->
+
+            <div class="container py-lg-5">
+
+                <!-- O py-lg-5 acrescenta mais espaço em cima e em baixo a partir de 992 px, o tamanho lg do Bootstrap -->
+
+                <p class="etiqueta">
+                    O meu portfólio pessoal
+                </p>
+
+                <h1 class="display-4 fw-bold">
+                    Olá, sou a Marlene Silva!
+                </h1>
+
+                <!-- o display-4 aplica um estilo de título de destaque do Bootstrap -->
+
+                <p class="lead mt-3 mb-4">
+                    Gosto de arte, explorar ideias
+                    e desenvolver projetos criativos
+                </p>
+
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+
+                    <!-- Organizei os botões com Flexbox, centrados e com possibilidade de mudar de linha em ecrãs pequenos -->
+
+                    <a href="#projetos" class="btn btn-danger btn-lg">
+                        Ver os meus projetos
+                    </a>
+
+                    <a href="#contacto" class="btn btn-outline-danger btn-lg">
+                        Contactar-me
+                    </a>
+
+                    <!-- Incluí duas ligações com aspeto de botão para facilitar o acesso aos projetos e ao contacto  -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre mim (Bootstrap)-->
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <!-- A classe row cria uma linha da grelha do Bootstrap -->
+
+                    <div class="col-lg-8">
+
+                        <!-- A grelha do Bootstrap divide a largura disponível em 12 partes e esta coluna ocupa 8 dessas 12 partes, aproximadamente dois terços da linha -->
+
+
+                        <h2 class="text-uppercase fw-bold">
+                            Sobre mim
+                        </h2>
+
+                        <p>
+                            O meu nome é Marlene Silva e tenho 26 anos.
+                            Sou recém-licenciada em Línguas e Estudos
+                            Editoriais e estou a concluir uma formação
+                            em Design UX/UI, que me tem dado uma nova
+                            perspetiva sobre o design.
+                        </p>
+
+                        <p>
+                            Sou uma pessoa curiosa, criativa e interessada
+                            em novos desafios. Gosto de explorar diferentes
+                            formas de arte e de transformar ideias em projetos.
+                            Neste portfólio, apresento alguns dos meus trabalhos.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos (Bootstrap) -->
+        <section id="projetos" class="py-5">
+
+            <!-- py-5 acrescenta espaço em cima e em baixo -->
+
+            <div class="container">
+
+                <!-- container centra e limita a largura do conteúdo -->
+
+                <h2 class="text-uppercase fw-bold">
+                    Os meus projetos
+                </h2>
+
+                <p class="text-center mb-5">
+                    Vem conhecer alguns dos trabalhos que tenho desenvolvido!
+                </p>
+
+                <!-- mb-5 cria espaço abaixo, antes dos cartões -->
+
+                <!-- Uma coluna em mobile e duas em tablet e desktop (Bootstrap) -->
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                    <!-- Utilizei a grelha do Bootstrap para mostrar um projeto por linha em mobile e dois por linha em tablet e desktop -->
+
+                    <!-- PROJETO 1 -->
+                    <div class="col">
+
+                        <!-- O col identifica uma coluna dentro da grelha -->
+
+                        <article class="card h-100">
+
+                            <!-- Usei <article> porque cada projeto é um conteúdo que pode ser compreendido individualmente e card aplica a estrutura de cartão do Bootstrap -->
+
+                            <div class="card-header">
+
+                                <span class="display-5 fw-bold">01</span>
+
+                                <!-- <span> permite aplicar estilos ao número, sem criar um título ou parágrafo -->
+
+                            </div>
+
+                            <div class="card-body d-flex flex-column">
+
+                                <h3 class="card-title h4 text-uppercase fw-bold">
+                                    Brand Board
+                                </h3>
+
+                                <p class="card-text">
+                                    Projeto de criação de um logótipo
+                                    e da identidade visual de uma marca.
+                                </p>
+
+                                <button class="btn btn-outline-danger mt-auto align-self-start" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#projeto1" aria-expanded="false"
+                                    aria-controls="projeto1">
+                                    Ver detalhes
+                                </button>
+
+                                <!-- <button> porque o elemento abre conteúdo, em vez de navegar para outra página -->
+
+                                <div class="collapse" id="projeto1">
+
+                                    <!-- Utilizei o componente collapse do Bootstrap para mostrar informações adicionais apenas quando o visitante clica no botão -->
+
+                                    <div class="detalhes-projeto">
+                                        <ul>
+                                            <li>
+                                                <strong>Técnica:</strong>
+                                                desenho vetorial.
+                                            </li>
+
+                                            <li>
+                                                <strong>Programa:</strong>
+                                                Figma.
+                                            </li>
+
+                                            <li>
+                                                <strong>Data:</strong>
+                                                outubro de 2026.
+                                            </li>
+                                        </ul>
+                                        <a href="https://www.figma.com/design/1sEN9QMnEnk1QUdZd87VxD/LOGOTIPO?node-id=0-1&t=JOncN3LsFyjZJQkI-1"
+                                            class="btn btn-outline-danger mt-3" target="_blank"
+                                            rel="noopener noreferrer">
+                                            Ver projeto no Figma
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- PROJETO 2 -->
+                    <div class="col">
+                        <article class="card h-100">
+
+                            <div class="card-header">
+                                <span class="display-5 fw-bold">02</span>
+                            </div>
+
+                            <div class="card-body d-flex flex-column">
+
+                                <h3 class="card-title h4 text-uppercase fw-bold">
+                                    Prototipagem para a web
+                                </h3>
+
+                                <p class="card-text">
+                                    Criação de um protótipo de uma
+                                    plataforma digital para uma marca.
+                                </p>
+
+                                <button class="btn btn-outline-danger mt-auto align-self-start" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#projeto2" aria-expanded="false"
+                                    aria-controls="projeto2">
+                                    Ver detalhes
+                                </button>
+
+                                <div class="collapse" id="projeto2">
+                                    <div class="detalhes-projeto">
+                                        <ul>
+                                            <li>
+                                                <strong>Baixa fidelidade:</strong>
+                                                esboços em papel.
+                                            </li>
+
+                                            <li>
+                                                <strong>Média fidelidade:</strong>
+                                                protótipo no Figma.
+                                            </li>
+
+                                            <li>
+                                                <strong>Data:</strong>
+                                                outubro de 2026.
+                                            </li>
+                                        </ul>
+                                        <a href="https://www.figma.com/design/sR1DAwLPsjX31LdTS2b30U/PROTOTIPO?node-id=0-1&t=u8Yp8IyaiF3DCwtV-1"
+                                            class="btn btn-outline-danger mt-3" target="_blank"
+                                            rel="noopener noreferrer">
+                                            Ver projeto no Figma
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- PROJETO 3 -->
+                    <div class="col">
+                        <article class="card h-100">
+
+                            <div class="card-header">
+                                <span class="display-5 fw-bold">03</span>
+                            </div>
+
+                            <div class="card-body d-flex flex-column">
+
+                                <h3 class="card-title h4 text-uppercase fw-bold">
+                                    Web Design
+                                </h3>
+
+                                <p class="card-text">
+                                    Criação de um portfólio digital
+                                    para apresentar o meu perfil e projetos.
+                                </p>
+
+                                <button class="btn btn-outline-danger mt-auto align-self-start" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#projeto3" aria-expanded="false"
+                                    aria-controls="projeto3">
+                                    Ver detalhes
+                                </button>
+
+                                <div class="collapse" id="projeto3">
+                                    <div class="detalhes-projeto">
+                                        <ul>
+                                            <li>
+                                                <strong>Tecnologias:</strong>
+                                                HTML, CSS e Bootstrap.
+                                            </li>
+
+                                            <li>
+                                                <strong>Programa:</strong>
+                                                Visual Studio Code.
+                                            </li>
+
+                                            <li>
+                                                <strong>Data:</strong>
+                                                outubro de 2026.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- PROJETO 4 -->
+                    <div class="col">
+                        <article class="card h-100">
+
+                            <div class="card-header">
+                                <span class="display-5 fw-bold">04</span>
+                            </div>
+
+                            <div class="card-body d-flex flex-column">
+
+                                <h3 class="card-title h4 text-uppercase fw-bold">
+                                    Maybe I Miss You
+                                </h3>
+
+                                <p class="card-text">
+                                    Criação de um cartaz inspirado na música
+                                    “Miss You”, de Louis Tomlinson.
+                                </p>
+
+                                <button class="btn btn-outline-danger mt-auto align-self-start" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#projeto4" aria-expanded="false"
+                                    aria-controls="projeto4">
+                                    Ver projeto
+                                </button>
+
+                                <div class="collapse" id="projeto4">
+                                    <div class="detalhes-projeto">
+
+                                        <img src="Imagens/missyou.png" class="imagem-miss-you mb-3"
+                                            alt="Cartaz Maybe I Miss You inspirado na música de Louis Tomlinson"
+                                            loading="lazy">
+
+                                        <ul>
+                                            <li>
+                                                <strong>Conceito:</strong>
+                                                representar a saudade e a intensidade emocional.
+                                            </li>
+
+                                            <li>
+                                                <strong>Técnicas:</strong>
+                                                composição gráfica, tipografia e exploração de cor.
+                                            </li>
+
+                                            <li>
+                                                <strong>Formato:</strong>
+                                                1920 × 1080 px.
+                                            </li>
+
+                                            <li>
+                                                <strong>Data:</strong>
+                                                setembro de 2026.
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Tabela do processo criativo -->
+
+                <section id="processo" class="py-5">
+                    <div class="container">
+
+                        <h2 class="text-uppercase fw-bold">
+                            Como desenvolvo os meus projetos
+                        </h2>
+
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+
+                                <!-- faz a coluna ocupar 10 das 12 partes da grelha -->
+
+                                <div class="table-responsive" role="region" aria-label="Etapas do meu processo criativo"
+                                    tabindex="0">
+                                    <table class="table table-bordered align-middle tabela-processo">
+
+                                        <caption>
+                                            Etapas que orientam o desenvolvimento dos meus projetos.
+                                        </caption>
+
+                                        <!-- <caption> descreve o conteúdo da tabela -->
+
+                                        <thead>
+
+                                            <!-- <thead> agrupa as linhas de cabeçalho -->
+
+                                            <tr>
+                                                <th scope="col">Etapa</th>
+                                                <th scope="col">O que faço</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1. Pesquisa</th>
+                                                <td>
+                                                    Recolho referências e procuro compreender
+                                                    o objetivo do projeto.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">2. Ideação</th>
+                                                <td>
+                                                    Exploro conceitos e faço os primeiros
+                                                    esboços.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">3. Desenvolvimento</th>
+                                                <td>
+                                                    Transformo a ideia numa proposta visual
+                                                    ou num protótipo.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">4. Avaliação e ajustes</th>
+                                                <td>
+                                                    Revejo o resultado e faço melhorias.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Competencias e programas -->
+                <section id="competencias" class="py-5">
+                    <div class="container">
+
+                        <h2 class="text-uppercase fw-bold">
+                            Competências e programas
+                        </h2>
+
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                            <!-- Utilizei a grelha do Bootstrap para mostrar as competências numa coluna em mobile e em três colunas nos ecrãs maiores -->
+
+                            <!-- DESIGN -->
+                            <div class="col">
+                                <article class="card h-100">
+                                    <div class="card-body text-center">
+
+                                        <h3 class="h5 fw-bold">
+                                            Design
+                                        </h3>
+
+                                        <p>
+                                            Criação de identidades visuais,
+                                            composição gráfica e desenho vetorial.
+                                        </p>
+
+                                        <span class="badge text-bg-light">Canva</span>
+                                        <span class="badge text-bg-light">Illustrator</span>
+                                        <span class="badge text-bg-light">Figma</span>
+
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- PROTOTIPAGEM -->
+                            <div class="col">
+                                <article class="card h-100">
+                                    <div class="card-body text-center">
+
+                                        <h3 class="h5 fw-bold">
+                                            Prototipagem
+                                        </h3>
+
+                                        <p>
+                                            Organização de conteúdos e criação
+                                            de protótipos para plataformas digitais.
+                                        </p>
+
+                                        <span class="badge text-bg-light">Figma</span>
+
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- WEB DESIGN -->
+                            <div class="col">
+                                <article class="card h-100">
+                                    <div class="card-body text-center">
+
+                                        <h3 class="h5 fw-bold">
+                                            Web Design
+                                        </h3>
+
+                                        <p>
+                                            Conhecimentos em HTML, CSS e Bootstrap
+                                            para criar páginas responsivas.
+                                        </p>
+
+                                        <span class="badge text-bg-light">
+                                            Visual Studio Code
+                                        </span>
+
+                                    </div>
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+    </main>
+
+    <!-- Contacto: formulário (Bootstrap) -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+
+            <h2 class="text-uppercase fw-bold">
+                Contactos
+            </h2>
+
+            <p class="text-center mb-4">
+                Tem alguma questão ou gostaria de propor uma colaboração?
+                Entre em contacto comigo por email.
+            </p>
+
+            <!-- mb-4 cria espaço abaixo -->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="caixa-contacto">
+
+                        <p id="avisoContacto" class="small">
+                            Formulário demonstrativo, sem envio de mensagens.
+                            Para contactar, utilize o botão de email abaixo.
+                        </p>
+
+                        <form class="row g-3" aria-describedby="avisoContacto">
+
+                            <!-- Incluí um aviso a esclarecer que o envio não está implementado -->
+
+                            <div class="col-md-6">
+                                <label for="nome" class="form-label">
+                                    Nome
+                                </label>
+
+                                <input type="text" class="form-control" id="nome" name="nome" autocomplete="name">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+
+                                <input type="email" class="form-control" id="email" name="email" autocomplete="email">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="assunto" class="form-label">
+                                    Assunto
+                                </label>
+
+                                <select class="form-select" id="assunto" name="assunto">
+                                    <option value="" selected disabled>
+                                        Selecione uma opção
+                                    </option>
+
+                                    <option value="informacoes">
+                                        Pedido de informações
+                                    </option>
+
+                                    <option value="colaboracao">
+                                        Proposta de colaboração
+                                    </option>
+
+                                    <option value="outro">
+                                        Outro assunto
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="mensagem" class="form-label">
+                                    Mensagem
+                                </label>
+
+                                <textarea class="form-control" id="mensagem" name="mensagem" rows="5"></textarea>
+                            </div>
+
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-secondary" disabled>
+                                    Envio indisponível nesta demonstração
+                                </button>
+
+                                <!-- Mantive o botão de envio desativado porque o formulário não está ligado a um serviço de receção de mensagens -->
+
+                            </div>
+
+                        </form>
+
+                        <div class="text-center mt-4">
+                            <a href="mailto:anamarlenetsilva@gmail.com" class="btn btn-danger">
+                                Contactar por email
+                            </a>
+
+                            <!-- Disponibilizei uma ligação mail to para permitir o contacto através da aplicação de email -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Depois das secções do portfólio, fechei o conteúdo principal e acrescentei o rodapé -->
+
+    <!-- Rodapé -->
+    <footer class="text-center py-4">
+        <div class="container">
+
+            <!-- Utilizei a tag footer para identificar o rodapé, com os créditos e uma ligação para regressar ao início -->
+
+            <p class="mb-2">
+                © 2026 Marlene Silva · Desenvolvido com HTML, CSS e Bootstrap
+            </p>
+
+            <!-- mb-2 cria uma pequena margem abaixo do texto -->
+
+            <a href="#inicio">
+                Voltar ao início
+            </a>
+
+            <!-- Acrescentei uma ligação para facilitar o regresso ao início da página -->
+
+        </div>
+    </footer>
+
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

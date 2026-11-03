@@ -1,0 +1,298 @@
+/* Geral */
+
+html {
+    scroll-padding-top: 100px;
+}
+
+body {
+    margin: 0;
+    padding-top: 90px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #212529;
+    background-color: #ffffff;
+}
+
+
+/* Cabeçalho */
+header {
+    background-color: #f8d7da;
+    border-bottom: 1px solid #edb8bd;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f8d7da;
+}
+
+.navbar {
+    padding: 16px 0;
+}
+
+.navbar-brand {
+    color: #58151c;
+    font-size: 22px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #b02a37;
+}
+
+.nav-link {
+    padding: 10px;
+    color: #212529;
+    border-radius: 6px;
+}
+
+/* Define-se o espaço interior, a cor do texto e os cantos arredondados dos links */
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #58151c;
+    background-color: #f8d7da;
+}
+
+/* Personalizei os links com CSS e defini uma mudança de cor para a interação com o rato e com o teclado */
+
+/* Apresentação */
+
+#inicio h1 {
+    color: #58151c;
+    font-size: clamp(36px, 6vw, 64px);
+}
+
+/* O clamp() adapta o tamanho, com tamanho minumo, tamanho que acompanha a largura do ecra e tamanho maximo */
+
+#inicio .lead {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* O max-width impede que a frase ultrapasse 700 px de largura */
+
+.etiqueta {
+    color: #58151c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header,
+.navbar,
+#inicio {
+    background-color: #f8d7da;
+}
+
+/* Títulos e textos */
+
+h2 {
+    margin-bottom: 28px;
+    color: #58151c;
+    font-size: 36px;
+    text-align: center;
+}
+
+h3 {
+    color: #58151c;
+}
+
+#sobre p,
+.card-body p {
+    text-align: left;
+}
+
+#sobre p {
+    margin-bottom: 20px;
+}
+
+
+/* Caixas rosa */
+
+.card {
+    overflow: hidden;
+    background-color: #f8d7da;
+    border: 1px solid #edb8bd;
+    border-radius: 12px;
+}
+
+.card-body {
+    padding: 24px;
+}
+
+.card-title {
+    margin-bottom: 16px;
+}
+
+.card-header {
+    padding: 20px 24px;
+    color: #58151c;
+    background-color: #f8d7da;
+    border-bottom: 1px solid #edb8bd;
+}
+
+
+/* Botões */
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.btn-danger {
+    color: #ffffff;
+    background-color: #b02a37;
+    border-color: #b02a37;
+}
+
+.btn-outline-danger {
+    color: #b02a37;
+    background-color: transparent;
+    border-color: #b02a37;
+}
+
+.btn-danger:hover,
+.btn-danger:active,
+.btn-outline-danger:hover,
+.btn-outline-danger:active {
+    color: #ffffff;
+    background-color: #58151c;
+    border-color: #58151c;
+}
+
+
+/* Detalhes dos projetos (Ver mais ou ver projeto) */
+
+.detalhes-projeto {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #edb8bd;
+}
+
+.detalhes-projeto ul {
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.detalhes-projeto li {
+    margin-bottom: 8px;
+}
+
+
+/* Contactos:formulário */
+
+.caixa-contacto {
+    padding: 24px;
+    background-color: #f8d7da;
+    border: 1px solid #edb8bd;
+    border-radius: 12px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control,
+.form-select {
+    padding: 12px;
+    background-color: #ffffff;
+    border-color: #edb8bd;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #b02a37;
+    box-shadow: 0 0 0 3px #ffffff;
+}
+
+
+/* Programas */
+
+#competencias h3 {
+    margin-bottom: 16px;
+}
+
+#competencias .badge {
+    margin: 3px;
+    padding: 8px 12px;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #f8d7da;
+}
+
+footer a {
+    color: #58151c;
+    text-underline-offset: 4px;
+}
+
+/* O text-underline-offset afasta o sublinhado das letras, tornando-o mais legível. */
+
+footer a:hover {
+    color: #b02a37;
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    h2 {
+        font-size: 30px;
+    }
+}
+
+/* Processo criativo: tabela */
+
+.tabela-processo th,
+.tabela-processo td {
+    padding: 16px;
+    border-color: #edb8bd;
+    text-align: left;
+}
+
+.tabela-processo thead th {
+    color: #58151c;
+    background-color: #f8d7da;
+}
+
+.tabela-processo tbody th {
+    color: #58151c;
+    background-color: #fff0f2;
+}
+
+.tabela-processo tbody td {
+    color: #212529;
+    background-color: #ffffff;
+}
+
+.tabela-processo caption {
+    color: #595959;
+    font-size: 14px;
+}
+
+/* Imagem do projeto Miss You */
+
+.imagem-miss-you {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Logótipo no cabeçalho */
+
+.logo {
+    display: block;
+
+    /* o block evita o pequeno espaço de alinhamento que as imagens podem deixar por baixo */
+
+    width: 150px;
+    height: auto;
+
+    /* o auto mantém as proporções */
+}
+
